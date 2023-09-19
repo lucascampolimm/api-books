@@ -1,3 +1,4 @@
+import { AppConfig } from './config';
 import './ExploreContainer.css';
 import axios from 'axios';
 
@@ -12,7 +13,7 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
   );
 };
 
-const API_KEY = '';
+const API_KEY = AppConfig.apiKey;
 const BASE_URL = 'https://www.googleapis.com/books/v1/volumes';
 
 const searchBooks = async (query:any) => {
